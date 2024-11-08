@@ -1,6 +1,7 @@
 package classes;
 
 import io.restassured.RestAssured;
+
 import io.restassured.path.json.JsonPath;
 
 import static io.restassured.RestAssured.*;
@@ -46,6 +47,8 @@ public class BasicAuthentication {
 
 		JsonPath js1	 = new JsonPath(fileresponse);
 		String filename =js1.getString("filename");
+		System.out.println(filename);
+		System.out.println(filename);
 		System.out.println(filename);
 		
 		//get issue details
